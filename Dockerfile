@@ -8,7 +8,7 @@ ENV HOME /root
 #RUN sed -i 's/archive/cn.archive/g' /etc/apt/sources.list
 
 RUN apt-get update && apt-get upgrade -y --force-yes && apt-get dist-upgrade -y --force-yes \
-    && apt-get install -y --force-yes x11vnc xvfb wmaker wmnd wmdate \
+    && apt-get install -y --force-yes x11vnc xvfb wmaker wmnd wmdate firefox ttf-wqy-microhei\
     && apt-get autoclean \
     && apt-get autoremove \
     && rm -rf /var/lib/apt/lists/*
